@@ -54,7 +54,7 @@ blocked = []
 limitawal = "50" // LIMIT USER
 memberlimit = "0" // MEMBER LIMIT GROUP
 cr = "*GHOST BOTZ VERIFIED*" // FAKE REPLY
-const ownerNumber = "6285559240360@s.whatsapp.net" // NOMOR OWNER
+const ownerNumber = "6285692949920@s.whatsapp.net" // NOMOR OWNER
 const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:3.0\n'
             + 'FN:X - MrR4M\n' // NAMA OWNER
@@ -260,6 +260,7 @@ const sleep = async (ms) => {
 async function starts() {
 	const rmln = new WAConnection()
 	rmln.logger.level = 'warn'
+        rmln.version = [2,2143,12]
 	console.log(banner.string)
 	rmln.on('qr', () => {
 		console.log(color('[', 'white'), color('!', 'red'), color(']', 'white'), color('Scan BosQue'))
